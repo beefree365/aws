@@ -8,6 +8,8 @@ async function fetchPosts() {
 
     const basePath = window.location.pathname.split('/')[1]; // 获取 'aws'
 
+    console.log("Base path:", basePath);
+
 
     // data 是数组，直接遍历
     data.forEach(post => {
