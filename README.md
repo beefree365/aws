@@ -14,3 +14,14 @@
     S3 (图片/附件存储)  todo
         ↓
     Cognito (用户认证)  todo
+
+
+### Hexo
+
+[ GitHub Pages ]
+       ↓ (静态内容 + JS)
+ [ hexo-theme-next ]
+       ↓ 调用
+ [ API Gateway → Lambda → DynamoDB ]
+       ↑            ↓
+ [ Cognito Identity + 签名临时凭证 ]
