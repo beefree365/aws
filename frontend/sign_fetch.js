@@ -7,8 +7,8 @@ import { Sha256 } from "@aws-crypto/sha256-js"; // ✅ 添加这一行
 
 const REGION = "ap-southeast-1";
 const IDENTITY_POOL_ID = "ap-southeast-1:104c8484-61d9-48dd-bbe1-e7c1678da892";
-const API_HOST = "vutwpw3822.execute-api.ap-southeast-1.amazonaws.com";
-const API_PATH = "/default/getPosts";
+const API_HOST = "ya9eq9jp5a.execute-api.ap-southeast-1.amazonaws.com";
+const API_PATH = "/default/getPostsSign";
 
 async function callApiGateway() {
   const cognitoClient = new CognitoIdentityClient({ region: REGION });
