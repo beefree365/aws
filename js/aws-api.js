@@ -7,12 +7,13 @@ async function fetchPosts() {
     console.log("获取到的文章：", data);
 
     const basePath = window.location.pathname.split('/')[1]; // 获取 'aws'
-    const fullPath = `/${basePath}/post.html?id=${post.PostId}`;
 
 
     // data 是数组，直接遍历
     data.forEach(post => {
       const div = document.createElement('div');
+      const fullPath = `/${basePath}/post.html?id=${post.PostId}`;
+
       // 假设 PostId 就是 slug，或者你有方法转换为slug
       // 链接改成 Hexo 默认文章路径：/post/<slug>/
     //   div.innerHTML = `<h3><a href="/post.html?id=${post.PostId}">${post.Title}</a></h3><p>${post.Content}</p>`;
