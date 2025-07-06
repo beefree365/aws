@@ -1,0 +1,1 @@
+## serverless 不好使, 不如直接在aws控制台部署 lambda function
