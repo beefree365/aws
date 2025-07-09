@@ -37,3 +37,8 @@
     hexo generate
     hexo deploy
 
+### 本地预览
+
+$ cd blog
+
+$ hexo server
