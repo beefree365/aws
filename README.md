@@ -29,8 +29,9 @@
 
  ### Deploy
 
- cd blog
- sh deploy.sh
+ $ cd blog
+
+ $ sh deploy.sh
 
     hexo clean
     hexo generate
