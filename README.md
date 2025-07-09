@@ -25,3 +25,14 @@
  [ API Gateway → Lambda → DynamoDB ]
        ↑            ↓
  [ Cognito Identity + 签名临时凭证 ]
+
+
+ ### Deploy
+
+ cd blog
+ sh deploy.sh
+
+    hexo clean
+    hexo generate
+    hexo deploy
+
