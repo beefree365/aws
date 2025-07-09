@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+# url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,10 +103,10 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+
+url: https://beefree365.github.io
+root: /aws/
 deploy:
-  type: ''
-
-
-inject:
-  bottom:
-    - /js/aws-signed-api.js
+  type: git
+  repo: https://github.com/beefree365/aws.git
+  branch: gh-pages
